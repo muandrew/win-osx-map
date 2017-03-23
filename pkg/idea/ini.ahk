@@ -1,0 +1,1 @@
+GroupAdd, idea_grp, ahk_exe idea.exe
