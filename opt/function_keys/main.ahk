@@ -1,2 +1,3 @@
-f11::#d
+f11::
+	Send #d
     return

@@ -3,7 +3,7 @@
 #c::
     Send ^{Ins}
     return
-#p::
+#v::
     Send +{Ins}
     return
 

@@ -15,15 +15,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include %A_ScriptDir%\emu\spectacle\main.ahk
 #Include %A_ScriptDir%\opt\function_keys\main.ahk
+
 #Include %A_ScriptDir%\pkg\chrome\main.ahk
 #Include %A_ScriptDir%\pkg\idea\main.ahk
 #Include %A_ScriptDir%\pkg\mintty\main.ahk
+#Include %A_ScriptDir%\pkg\sublime\main.ahk
 
 ;==========
 ; General
 ;==========
 
-^r::
+^1::
     MsgBox "Reload!"
     Reload
     return
@@ -70,11 +72,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #r::
     Send ^r
     return
-
+; spotlight
 #Space::
     Send {LWin}
     return
 
+; movement and selection
 #Up::
     Send ^{Home}
     return

@@ -5,7 +5,7 @@
 #IfWinActive ahk_exe chrome.exe
 
 #l::
-    ^l
+    Send ^l
     return
 
 #IfWinActive
