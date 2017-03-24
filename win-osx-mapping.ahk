@@ -9,7 +9,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; # = Windows modifier
  
 ; https://autohotkey.com/board/topic/21510-toaster-popups/
-; https://github.com/guillemcanal/autohotkey-apple-keyboard/blob/master/AppleKeyboard.ahk
 
 #Include %A_ScriptDir%\pkg\idea\ini.ahk
 
