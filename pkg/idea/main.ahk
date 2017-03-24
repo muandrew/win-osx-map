@@ -4,23 +4,30 @@
 
 #IfWinActive ahk_group idea_grp
 
-#,::^!s
+#,::
+	Send ^!s
     return
 ; find class
-#o::^n
+#o::
+	Send ^n
     return
 ; find file
-#+o::^+n
+#+o::
+	Send ^+n
     return
 
 ; find action
 #+a::
-    ^+a
+    Send ^+a
     return
 
 ; close tab
-#w:: send ^{f4}
+#w::
+	Send ^{f4}
+	return
 
-#/::^/
+#/::
+	Send ^/
+	return
 
 #IfWinActive

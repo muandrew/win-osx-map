@@ -17,6 +17,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include %A_ScriptDir%\opt\function_keys\main.ahk
 #Include %A_ScriptDir%\pkg\chrome\main.ahk
 #Include %A_ScriptDir%\pkg\idea\main.ahk
+#Include %A_ScriptDir%\pkg\mintty\main.ahk
 
 ;==========
 ; General
@@ -27,36 +28,47 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
     Reload
     return
 
-#c::^c
+#c::
+    Send ^c
     return
-#x::^x
+#x::
+    Send ^x
     return
-#v::^v
+#v::
+    Send ^v
+    return
+#a::
+    Send ^a
     return
 #q::
-    send !{f4}
+    Send !{f4}
     return
 
 #w::
-    send !{f4}
+    Send !{f4}
     return
 
 ; Don't remap for windows 7
 ;#Tab::!Tab
 
-#z::^z
+#z::
+    Send ^z
     return
-#+z::^y
+#+z::
+    Send ^y
     return
 
-#s::^s
+#s::
+    Send ^s
     return
 
 ;find
-#f::^f
+#f::
+    Send ^f
     return
 ;replace
-#r::^r
+#r::
+    Send ^r
     return
 
 #Space::
