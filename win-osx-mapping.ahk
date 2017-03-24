@@ -15,6 +15,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include %A_ScriptDir%\emu\spectacle\main.ahk
 #Include %A_ScriptDir%\opt\function_keys\main.ahk
+; #Include %A_ScriptDir%\opt\media_keys\main.ahk
 
 #Include %A_ScriptDir%\pkg\chrome\main.ahk
 #Include %A_ScriptDir%\pkg\idea\main.ahk
